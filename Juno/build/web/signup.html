@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) 
+{
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+    </head>
+    <body>
+        <h2>Sign up to JUNO</h2>
+     
+<form action="signup">
+  <div class="imgcontainer">
+    <img src="login profile.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+    
+    <label><b>Email Address</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+    <label><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw" required> 
+        
+    <input type="checkbox" checked="checked">Send me occasional email updates
+    <p><input type="checkbox" checked="checked"><right>Remember me</right></p>
+    <button type="submit">Register</button>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+<hr>
+<font size="1" color="gray"> 
+<p><center>By continuing past this page,you agree to our Terms of Service,Cookie Policy,Privacy Policy and Content Policies.</center></p>
+</font>
+
+    </body>
+</html>
