@@ -1,0 +1,95 @@
+<div class="row">
+  <div class="column1">
+    <img src="auto.jpg" alt="auto" style="width:100px;height:65px" onclick="myFunction(this);">
+  <div class="text">
+      <h2>Auto</h2>
+      <h4>Get an Auto at your doorstep</h4>
+      <p>The all too familiar auto ride, minus the hassle of waiting and haggling for price.
+          A convenient way to travel everyday.</p>
+  </div>
+  </div>
+
+  <div class="column1">
+    <img src="bike.jpg" alt="bike" style="width:100px;height:65px" onclick="myFunction(this);">
+  <div class="text">
+      <h2>Bike</h2>
+      <h4>On time, Every time</h4>
+      <p>Hate waiting in the snarling traffic each day? Not anymore as with JUNO Bike you can now reduce your travel time by at least 50%.
+          Simply book a bike with a tap of a button and ride away within minutes and all this at the most affordable rates in town!</p>
+  </div>
+  </div>
+
+  <div class="column1">
+    <img src="share.jpg" alt="share" style="width:100px;height:65px" onclick="myFunction(this);">
+  <div class="text">
+      <h2>Share</h2>
+      <h4>Eco-Friendly rides at pocket-friendly rates</h4>
+      <p>Fully air conditiones cars that you can share with others depending on your route and location.</p>
+  </div>
+  </div>
+  </div>
+
+
+
+  <div class="column1">
+    <img src="mini.jpg" alt="mini" style="width:100px;height:65px" onclick="myFunction(this);">
+  <div class="text">
+      <h2>Mini</h2>
+      <h4>Everyday dependable ride</h4>
+      <p>A regular comfortable AC hatchback that becomes your everyday dependable ride.
+          An economical option for daily commute.</p>
+  </div>
+  </div>
+
+  <div class="column1">
+    <img src="prime sedan.jpg" alt="sedan" style="width:100px;height:65px" onclick="myFunction(this);">
+  <div class="text">
+      <h2>Prime Sedan</h2>
+      <h4>Sedans with free Wi-Fi and top drivers</h4>
+      <p>Top rated drivers, and a hand-picked flet of the best cars with extra legroom and boot space.</p>
+  </div>
+  </div>
+
+  <div class="column1">
+    <img src="prime suv.jpg" alt="suv" style="width:100px;height:65px" onclick="myFunction(this);">
+  <div class="text">
+      <h2>Prime SUV</h2>
+      <h4>SUVs with free Wi-Fi and top drives</h4>
+      <p>A perfect choice of car for your weekend gateways, with plenty of room for everyone including that extra bag.</p>
+  </div>
+  </div>
+
+  <div class="column1">
+    <img src="lux.jpg" alt="lux" style="width:100px;height:65px" onclick="myFunction(this);">
+  <div class="text">
+      <h2>Lux</h2>
+      <h4>The new luxury ride in town</h4>
+      <p>Top-of-the-line luxury cars like Mercedes, BMW and Audis powered by auto-connect Wi-Fi, at unbeatable fares & attractive hourly rental packages.</p>
+  </div>
+  </div>
+
+  <div class="column1">
+    <img src="rick.jpg" alt="rick" style="width:100px;height:65px" onclick="myFunction(this);">
+  <div class="text">
+      <h2>E-Rick</h2>
+      <h4>The new way to travel</h4>
+      <p>Go green by booking yourself an e-rickshaw ride online and travel short distances without the hassle of managing and arranging change.</p>
+  </div>
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:60%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html 
+{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    
+    background-image: url("lux.jpg");
+    height:550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Forgot Password</h2>
+<div class="bg-img">
+  <form action="reset"  class="container">
+    
+    
+    <label><b>Email Address</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+    <label><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="cpsw" required> 
+
+    <button type="submit" class="btn"><a href="signup.html">Reset</a></button><br><br><br>
+
+    
+ </form>
+</div>
+
+
+<hr>
+<font size="1" color="gray"> 
+<p><center>By continuing past this page,you agree to our Terms of Service,Cookie Policy,Privacy Policy and Content Policies.</center></p>
+</font>
+
+
+</body>
+</html>
