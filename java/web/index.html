@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<title>JUNO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+footer
+{
+  padding: 1px;
+  color: white;
+  background-color: black;
+  clear: left;
+  text-align: center;
+ 
+}
+ 
+body
+{
+ background: url("bg1.jpg");
+ background-size: 1410px 600px;
+ background-repeat: no-repeat;
+}
+.w3-tangerine
+{
+ font-family: "tangerine",serif;
+}
+*{
+  box-sizing: border-box;
+}
+
+body
+{
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+.main 
+{
+    max-width: 1500px;
+    margin: auto;
+}
+
+h1 
+{
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row 
+{
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column 
+{
+    padding: 20px;
+}
+
+.column 
+{
+    float: left;
+    width: 33%;
+}
+
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content 
+{
+    background-color: white;
+    padding: 5px;
+}
+
+@media (max-width: 1000px) 
+{
+    .column 
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) 
+{
+    .column 
+    {
+        width: 100%;
+    }
+}
+
+.mySlides {display:none;}
+
+/* The grid: Four equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 10%;
+    padding: 5px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after1 {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container1 {
+    position: relative;
+    display: none;
+    width : 10%;
+}
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    
+    color: white;
+    font-size: 20px;
+    float: center;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img align="left" src="juno logo.jpg" width="60px" height="60px">
+      <a class="navbar-brand" href="#"><h4>JUNO</h4></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html"><h5>Home</h5></a></li>
+      <li><a href="login.html"><h5>Log in</h5></a></li>
+      <li><a href="signup.html"><h5>Create an account</h5></a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="book.html"><h5>Book Now</h5></a>
+        <ul class="dropdown-menu">
+          <li><a href="book.html">Daily Rides</a></li>
+          <li><a href="os.html">Outstations</a></li>
+          <li><a href="rent.html">Rentals</a></li>
+        </ul>
+      </li> 
+      <li><a href="feed.html"><h5>FeedBack</h5></a></li>
+     </ul>
+
+    <form class="navbar-form navbar-right" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick="location.href='http://google.com';">
+            <i class="glyphicon glyphicon-search"></i>
+              </button>    
+        </div>
+      </div>
+    </form>
+    
+  </div>
+</nav>
+
+<div class="w3-container w3-tangerine">
+<font color="black" size="100" style="float:right"><b>JUNO</b></font>
+</div><br><br><br><br><br><br><br><br><br><br>
+<br>
+
+<font color="black" size="6" style="float:right">
+<p><strong>Find the cars.....</strong></p></font><br><br><br>
+<p><font color="black" size="5" style="float:right">A car for everyone</font><br><br><br>
+<font color="gray" size="4" style="float:right">From accelerating the future to all roads lead your way,<br>Juno is always there for you.</></font></p><br></div><br><br>
+
+<br><br>
+<h2>A car for every ocassion</h2>
+<h4>Juno offers city taxi, inter-city taxi and local cabs at hourly packages.</h4>
+<div class="main">
+ <div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="taxi.jpg" alt="booking" style="width:100%;height:50%;border:0">
+      <h3><a href="book.html">DAILY RIDES</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+          <img src="dr car.jpg" alt="dr" style="width:30%;height:20%;border:0"></h3>
+      <p>The best way to get through your everyday travel needs.Daily Rides are available 24/7 and you can book and travel in an instant.With rides starting from as low as Rs.6/km, you can choose from a wide range of options! You can also opt to do your bit for the environment with Jshare!</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="out.jpg" alt="booking" style="width:100%;height:50%;border:0">
+     <h3><a href="os.html">OUTSTATIONS</a>&nbsp &nbsp &nbsp &nbsp &nbsp 
+         <img src="os car.jpg" alt="dr" style="width:30%;height:20%;border:0"></h3>
+     <p>Ride out of town at affordable one-way and round-trip fares with Juno's intercity travel service.Choose a range of AC cabs driven by top partners, available in 1 hour or book upto 7 days in advance.We have you covered across India with presence in 90+ cities with over 500 one way routes.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="rents.jpg" alt="booking" style="width:380px;height:250px;border:0">
+     <h3><a href="rent.html">RENTALS</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+         <img src="rental.png" alt="dr" style="width:40%;height:30%;border:0"></h3>
+     <p>With Juno Rentals you get a cab at your disposal.So be it a day business meeting, a shopping tree with your friends or just a day out in a new city, we have you covered.</p><br><br>
+    </div>
+  </div>
+ </div>
+</div>
+
+<h2>Meet our Awesome Fleet</h2>
+<h4>The widest variety of cars to choose from.....</h4>
+
+<div class="w3-content w3-display-container">
+  
+  <a href="auto.html"><img class="mySlides" src="auto.png" style="width:100%"></a>
+  <a href="bike.html"><img class="mySlides" src="bike.JPG" style="width:100%"></a>
+  <a href="share.html"><img class="mySlides" src="share.jpg" style="width:100%"></a>
+  <a href="mini.html"><img class="mySlides" src="mini.jpg" style="width:100%"></a>
+  <a href="micro.html"><img class="mySlides" src="micro.jpg" style="width:100%"></a>
+  <a href="primeSedan.html"><img class="mySlides" src="prime sedan.jpg" style="width:100%"></a>
+  <a href="primeSuv.html"><img class="mySlides" src="prime suv.jpg" style="width:100%"></a>
+  <a href="lux.html"><img class="mySlides" src="lux.jpg" style="width:100%"></a>
+  <a href="rick.html"><img class="mySlides" src="rick.jpg" style="width:100%"></a>
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<hr>
+<br><br>
+<img src="phn.png" alt="app" style="float:right;width:550px;height:350px;border:0;">
+<h2>Book an JUNO from the App</h2>
+<h4>Download the app for exclusive deals and ease of booking</h4><br><br>
+<a href="https://play.google.com/store?hl=en"><img src="gp.png" style="float:left;width:20%;height:20%;border:0;">
+    <br><br><br><br></a>
+<a href="https://www.apple.com/in/ios/app-store/"><img src="as.png" style="float:left;width:20%;height:20%;border:0;"><br><br><br><br></a>
+<a href="https://www.microsoft.com/en-us/store/b/home"><img src="mi.png" style="float:left;width:250px;height:70px;border:0;"></a>
+<hr>
+<hr>
+<br><br>
+<div class="main">
+ <div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="cs.jpg" alt="booking" style="width:340px;height:200px;border:0">
+      <h3><a href=".html">24/7 Customer Support</a></h3>
+      <p>A dedicated 24/7 customer support team always at your service to help solve any problem.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="sos.jpg" alt="booking" style="width:340px;height:200px;border:0">
+      <h3><a href=".html">Your Safety First</a></h3>
+      <p>Keep your loved ones informed about your travel routes or call emergency services when in need.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="driver.jpg" alt="booking" style="width:340px;height:200px;border:0">
+      <h3><a href=".html">Top Rated Driver-Partners</a></h3>
+      <p>All our driver-partners are background verified and trained to deliver only the best experience.</p>
+    </div>
+  </div>
+ </div>
+</div>
+     
+<footer>
+<img align="left" src="juno logo.jpg" width="70px" height="59px">
+<h4>Contact Us:- 9915007202,9417502935</h4>
+<form align="right">
+ <select name="languages">
+   <option value="english">English</option>
+   <option value="hindi">Hindi</option>
+ </select>
+</form>
+<br>
+<hr>
+<nav>
+<a href="privacy.html">Privacy</a>|
+<a href="terms.html">Terms</a>|
+<a href="api.html">API Policy</a>|
+<a href="csr.html">CSR</a>|
+<a href="security.html">SECURITY</a>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp 
+<a href="https://www.facebook.com"><img src="fb.png" alt="fb"  width="42" height="42" border="0"></a>
+<a href="https://www.instagram.com/accounts/login/?hl=en"><img src="insta.png" alt="insta" width="42" height="42" border="0"></a>
+<a href="https://twitter.com/login?lang=en"><img src="twitter.jpg" alt="tw" width="42" height="42" border="0"></a>
+</nav>
+<hr>
+<font size="1" color="gray"> 
+<p>By continuing past this page,you agree to our Terms of Service,Cookie Policy,Privacy Policy and Content Policies.All trademarks are properties of their respective owners.©2017-The Food Shuttle™ Media Pvt Ltd.All rights reserved.</p>
+</font>
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Booking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+footer
+{
+  padding: 1px;
+  color: white;
+  background-color: black;
+  clear: left;
+  text-align: center;
+}
+ 
+body, html 
+{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg {
+    
+    background: url("dr.jpg");
+    height:700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+    font-family: Arial;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img align="left" src="juno logo.jpg" width="60px" height="60px">
+      <a class="navbar-brand" href="#"><h4>JUNO</h4></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html"><h5>Home</h5></a></li>
+      <li><a href="login.html"><h5>Log in</h5></a></li>
+      <li><a href="signup.html"><h5>Create an account</h5></a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="book.html"><h5>Book Now</h5></a>
+        <ul class="dropdown-menu">
+          <li><a href="book.html">Daily Rides</a></li>
+          <li><a href="os.html">Outstations</a></li>
+          <li><a href="rent.html">Rentals</a></li>
+        </ul>
+      </li> 
+     
+     </ul>
+
+    <form class="navbar-form navbar-right" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="button" onclick="location.href='http://google.com';">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    
+  </div>
+</nav>
+
+<div class="bg">
+  <form action="booking.jsp" class="container">
+    
+    <h1>DAILY RIDES</h1>
+    <h3>Everyday city commutes</h3>
+    <p>Affordable AC cab rides at your doorstep</p>
+    <br>
+    <label><b>FROM</b></label>
+    <input type="text" placeholder="Enter Pickup Location" name="pickup" required>
+    
+    <label><b>TO</b></label>
+    <input type="text" placeholder="Search for a locality or landmark" name="dropin" required>
+     
+    <label><b>WHEN</b></label><br>
+    <input type="text" placeholder="Now" name="when" required>
+    
+    <a href="driver.html"><button type="submit" class="btn">Choose a driver</button></a><hr>
+    <button type="submit" class="btn" onclick="location.href='https://www.google.com/maps/@30.8821215,75.8727266,14z';">Current Location</button>
+    
+    </form>
+</div>
+
+   
+<hr>
+<font size="1" color="gray"> 
+<p><center>By continuing past this page,you agree to our Terms of Service,Cookie Policy,Privacy Policy and Content Policies.</center></p>
+
+</body>
+</html>
